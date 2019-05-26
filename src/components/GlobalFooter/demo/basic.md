@@ -32,7 +32,7 @@ const links = [
 
 const copyright = (
   <div>
-    Copyright <Icon type="copyright" /> 人生无限公司
+    Copyright <Icon type="copyright" /> Life Unlimited Company
   </div>
 );
 

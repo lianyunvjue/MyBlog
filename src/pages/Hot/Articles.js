@@ -31,7 +31,7 @@ const pageSize = 5;
     });
   },
 })
-class SearchList extends Component {
+class Articles extends Component {
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch({
@@ -246,4 +246,4 @@ class SearchList extends Component {
   }
 }
 
-export default SearchList;
+export default Articles;

@@ -28,7 +28,7 @@ const FooterView = () => (
       ]}
       copyright={
         <Fragment>
-          Copyright <Icon type="copyright" /> 2019 人生无限公司
+          Copyright <Icon type="copyright" /> 2019 Life Unlimited Company
         </Fragment>
       }
     />

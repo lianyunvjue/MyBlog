@@ -26,31 +26,73 @@ export default [
       // 今日热点
       {
         path: '/hot',
-        icon: 'table',
+        icon: 'fire',
         name: 'hot',
         routes: [
           {
             path: '/hot/articles',
             name: 'hotarticles',
-            component: './hot/articles',
+            component: './Hot/Articles',
           },
           {
             path: '/hot/projects',
             name: 'hotprojects',
-            component: './hot/projects',
+            component: './Hot/Projects',
           },
           {
             path: '/hot/applications',
             name: 'hotapplications',
-            component: './hot/applications',
+            component: './Hot/Applications',
           },
+        ],
+      },
+      //我的发布
+      {
+        path: '/publish',
+        icon: 'container',
+        name: 'publish',
+        routes: [
+          {
+            path: '/publish/writings',
+            name: 'writings',
+            component: './Publish/Writings',
+          },
+          {
+            path: '/publish/project',
+            name: 'project',
+            component: './Publish/Project',
+          },
+          {
+            path: '/publish/application',
+            name: 'application',
+            component: './Publish/Application',
+          },
+        ],
+      },
+      //后台管理
+      {
+        path: '/management',
+        icon: 'audit',
+        name: 'management',
+        routes: [
+          {
+            path: '/management/peoplemanagement',
+            name: 'peoplemanagement',
+            component: './Management/Peoplemanagement',
+          },
+          {
+            path: '/Management/articlesmanagement',
+            name: 'articlesmanagement',
+            component: './Management/Articlesmanagement',
+          },
+          
         ],
       },
       // user 个人页
       { path: '/', redirect: '/hot/articles', authority: ['admin', 'user'] },
       {
         name: 'account',
-        icon: 'user',
+        icon: 'setting',
         path: '/account',
         routes: [
           {
